@@ -1,1 +1,19 @@
 <P>this is your base page and you are bhavesh right !!!!!!!!!!!!1</P>
+
+{{data}}
+<br>
+
+{% for x in data%}
+{{x.id}}
+{{x.name}}
+{{x.age}}
+{{x.salary}}
+
+
+{% endfor %}
+
+{% if data %}
+{{empDetail.name}}
+{% else %}
+<p>the details are not avaliable</p>
+{% endif %}
